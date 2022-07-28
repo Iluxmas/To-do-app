@@ -6,29 +6,30 @@ import imp from "./warning-sign.png";
 export default function TodoListItem(props) {
   const { label, onDeleted, onToggleDone, onToggleImportant, important, done } = props;
 
-  let classNames = "todo-list-item";
-  if (done) {
-    classNames += " done";
-  }
+  let spanClassNames = "todo-list-item";
+  let bttnImportantClassName = "btn btn-outline-success btn-sm";
+
+  spanClassNames += done ? " done" : "";
 
   if (important) {
-    classNames += " important";
+    bttnImportantClassName += " btn-important";
+    spanClassNames += " important";
   }
 
   return (
-    <span className={classNames}>
+    <div className={spanClassNames}>
       <span className="todo-list-item-label" onClick={onToggleDone}>
-        {" "}
-        {label}{" "}
+        {label}
       </span>
+      <div>
+        <button type="button" className={bttnImportantClassName} onClick={onToggleImportant}>
+          <img src={imp} className="btn-icon" />
+        </button>
 
-      <button type="button" className="btn btn-outline-success btn-sm float-right" onClick={onToggleImportant}>
-        <img src={imp} className="btn-icon" />
-      </button>
-
-      <button type="button" className="btn btn-outline-danger btn-sm float-right" onClick={onDeleted}>
-        <img src={trash} className="btn-icon" />
-      </button>
-    </span>
+        <button type="button" className="btn btn-outline-danger btn-sm" onClick={onDeleted}>
+          <img src={trash} className="btn-icon" />
+        </button>
+      </div>
+    </div>
   );
 }

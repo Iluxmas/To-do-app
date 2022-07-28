@@ -11,19 +11,19 @@ export default class App extends Component {
 
   state = {
     todoData: [
+      this.createTodoItem("Пройти собеседование в Mindbox"),
       this.createTodoItem("Добавить дела"),
       this.createTodoItem("Полюбить списки"),
       this.createTodoItem("Перестать иронизировать"),
-      this.createTodoItem("Что-то еще"),
     ],
     term: "",
-    filter: "all", //active, all, done
+    filter: "all",
   };
 
   createTodoItem(label) {
     return {
       label,
-      important: false,
+      important: label.includes("Mindbox") ? true : false, // :P
       done: false,
       id: this.maxId++,
     };

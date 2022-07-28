@@ -1,6 +1,6 @@
 .item-add-form {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .item-add-form input {
   margin-right: 5px;
@@ -14,4 +14,8 @@
 .item-add-form button {
   height: 40px;
   width: 120px;
+  border-radius: 5px;
+}
+.item-add-form button:hover {
+  background-color: #aaa;
 }

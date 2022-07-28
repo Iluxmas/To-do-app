@@ -2,15 +2,7 @@ import React, { useState } from "react";
 import "./item-add-form.css";
 
 export default function ItemAddForm(props) {
-  // state = {
-  //   label: "",
-  // };
-
   const [label, setLabel] = useState("");
-
-  // onLabelChange = (event) => {
-  //   this.setState({ label: event.target.value });
-  // };
 
   function onSubmit(event) {
     event.preventDefault();
@@ -24,7 +16,7 @@ export default function ItemAddForm(props) {
         type="text"
         className="form-control"
         onChange={(event) => setLabel(event.target.value)}
-        placeholder="Что нужно сделать?"
+        placeholder="What needs to be done?"
         value={label}
         required
       />

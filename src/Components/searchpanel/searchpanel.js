@@ -14,7 +14,7 @@ export default function SearchPanel(props) {
     <input
       type="text"
       className="form-control search-input"
-      placeholder="search"
+      placeholder="type here to search..."
       value={term}
       onChange={(evt) => onSearch(evt)}
     />

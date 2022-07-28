@@ -1,0 +1,21 @@
+.top-panel button {
+  height: 40px;
+}
+.top-panel button:hover {
+  background-color: #aaa;
+  border-color: #444;
+  box-shadow: 0 0 0 2px #bbb;
+}
+.top-panel button:focus {
+  background-color: #aaa;
+  border-color: #444;
+  box-shadow: 0 0 0 1px #bbb;
+}
+.top-panel button:focus:active {
+  box-shadow: 0 0 0 1px #bbb;
+}
+
+.btn-info {
+  background-color: #aaa;
+  border-color: #444;
+}

@@ -1,8 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+
 .todo-app {
-    margin: 2rem auto 0 auto;
-    max-width: 600px;
-  }
-  
-  .top-panel {
-    margin: 1rem 0;
-  }
+  margin: 2rem auto 0 auto;
+  max-width: 700px;
+  background-color: #eee;
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.top-panel {
+  margin: 0;
+  margin-top: 10px;
+}

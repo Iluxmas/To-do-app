@@ -1,12 +1,15 @@
 .app__header {
-    align-items: flex-end;
+  align-items: flex-end;
 }
 
 .app__header h1 {
-    flex-grow: 1;
+  flex-grow: 1;
+  font-weight: 600;
+  margin-bottom: 0;
 }
 
 .app__header h2 {
-    color: grey;
-    font-size: 1.2rem;
+  color: grey;
+  font-size: 1rem;
+  margin-bottom: 0;
 }
