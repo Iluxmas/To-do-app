@@ -11,7 +11,7 @@ export default class App extends Component {
 
   state = {
     todoData: [
-      this.createTodoItem("Пройти собеседование в Mindbox"),
+      this.createTodoItem("Пройти собеседование"),
       this.createTodoItem("Добавить дела"),
       this.createTodoItem("Полюбить списки"),
       this.createTodoItem("Перестать иронизировать"),
@@ -23,7 +23,7 @@ export default class App extends Component {
   createTodoItem(label) {
     return {
       label,
-      important: label.includes("Mindbox") ? true : false, // :P
+      important: false,
       done: false,
       id: this.maxId++,
     };
