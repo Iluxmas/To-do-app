@@ -16,7 +16,9 @@ const TodoList = ({ todos, onDeleted, onToggleDone, onToggleImportant }) => {
     );
   });
 
-  return <ul className="list-group todo-list">{elements}</ul>;
+  const placeholder = <span className="list__placeholder">There is no todos with such status...</span>;
+
+  return <ul className="list-group todo-list">{elements.length > 0 ? elements : placeholder}</ul>;
 };
 
 export default TodoList;
