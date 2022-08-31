@@ -2,7 +2,7 @@
 
 Project was done using React, including Hooks and Class components.
 
-Featers:
+**Featers:**
 
 - Add/delete todos
 - Mark todos as done and as important
@@ -12,7 +12,7 @@ Featers:
 
 Compilation is done by Webpack.
 
-Next plans: cover app with Jest tests.
+**Next plans**: cover app with Jest tests.
 
 **GitHub**
 
