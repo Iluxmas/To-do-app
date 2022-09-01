@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppHeader matches snapshot 1`] = `
+<div
+  className="app__header d-flex"
+>
+  <h1>
+    My Todo List
+  </h1>
+  <h2
+    data-testid="h2"
+  >
+    3
+     more to do, 
+    3
+     done
+  </h2>
+</div>
+`;

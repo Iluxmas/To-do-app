@@ -23,8 +23,8 @@ export default class App extends Component {
   createTodoItem(label) {
     return {
       label,
-      important: false,
-      done: false,
+      important: label === "Пройти собеседование" ? true : false,
+      done: label === "Перестать иронизировать" ? true : false,
       id: this.maxId++,
     };
   }
