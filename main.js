@@ -155,8 +155,8 @@ var App = /*#__PURE__*/function (_Component) {
     value: function createTodoItem(label) {
       return {
         label: label,
-        important: false,
-        done: false,
+        important: label === "Пройти собеседование" ? true : false,
+        done: label === "Перестать иронизировать" ? true : false,
         id: this.maxId++
       };
     }
@@ -263,7 +263,9 @@ var AppHeader = function AppHeader(_ref) {
       done = _ref.done;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "app__header d-flex"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "My Todo List"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, toDo, " more to do, ", done, " done"));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "My Todo List"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    "data-testid": "h2"
+  }, toDo, " more to do, ", done, " done"));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AppHeader);
@@ -315,6 +317,7 @@ function ItemAddForm(props) {
       return _onSubmit(evt);
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    "data-testid": "formInput",
     type: "text",
     className: "form-control",
     onChange: function onChange(event) {
