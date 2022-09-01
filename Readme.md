@@ -1,6 +1,8 @@
 # Application To do list
 
-Project was done using React, including Hooks and Class components.
+**Tech stack:** React.js, JavaScript, Webpack, Jest 
+
+**Desription:** Project was done using React, including Hooks and Class components. At the moment some components are covered with various tests.
 
 **Featers:**
 
@@ -10,9 +12,11 @@ Project was done using React, including Hooks and Class components.
 - Case insensitive search of todos
 - Todos counter (active and done)
 
-Compilation is done by Webpack.
+Project compilation done by Webpack, avaliable via link in the bottom.
 
-**Next plans**: cover app with Jest tests.
+In case of cloning of main branch, execute next commands to run the project - `npm i` to install dependencies, `npm start` to run page on port :8080
+
+**Next plans**: Cover more components with tests.
 
 **GitHub**
 
