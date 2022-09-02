@@ -20,4 +20,4 @@ In case of cloning of main branch, execute next commands to run the project - `n
 
 **GitHub**
 
-[Link to GitHub Pages](https://iluxmas.github.io/To-do-app/)
+[Link to GitHub Pages](https://iluxmas.github.io/To-do-app/) (use CTRL+click or ⌘+click to open in new tab)
