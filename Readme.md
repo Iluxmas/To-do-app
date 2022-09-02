@@ -12,7 +12,7 @@
 - Case insensitive search of todos
 - Todos counter (active and done)
 
-Project compilation done by Webpack, avaliable via link in the bottom.
+Webpack was used for bundling, avaliable via link in the bottom.
 
 In case of cloning of main branch, execute next commands to run the project - `npm i` to install dependencies, `npm start` to run page on port :8080
 
